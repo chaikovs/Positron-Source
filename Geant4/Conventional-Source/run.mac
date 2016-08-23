@@ -1,0 +1,26 @@
+/control/verbose 2
+/gps/verbose 2
+/event/verbose 1
+/tracking/verbose 1
+
+/run/initialize
+
+/gps/source/intensity 5.
+
+/gps/particle e-
+/gps/pos/type Beam
+
+/gps/direction 0 0 1
+
+/gps/pos/shape Circle
+/gps/pos/centre 0. 0. 0. mm
+
+/gps/pos/sigma_x 4 mm
+/gps/pos/sigma_y 4 mm
+
+/gps/ene/type Gauss
+/gps/ene/mono 6 GeV
+
+/TT/det/setTargetThickness 7. mm
+
+/run/beamOn 100000
