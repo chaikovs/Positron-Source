@@ -5,14 +5,12 @@
 #include "globals.hh"
 
 class G4ParticleGun;
-class G4Event;
-class DetectorConstruction;
 class G4GeneralParticleSource;
 
 class PrimaryGeneratorAction : public G4VUserPrimaryGeneratorAction
 {
 public:
-    PrimaryGeneratorAction(DetectorConstruction*);
+    PrimaryGeneratorAction();
     virtual ~PrimaryGeneratorAction();
     virtual void GeneratePrimaries(G4Event*);
 private:

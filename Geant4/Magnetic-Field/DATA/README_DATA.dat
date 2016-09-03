@@ -1,0 +1,3 @@
+README_DATA
+
+Copy these folders to your build directory before compiling project. Output files with data will be created in these folders [/AFTER_*, /BEFORE_*, /TARGET]. Use files in /CXX folder after simulation for create graphs and histograms (some needed data plots). Your plots will be created in /PNG folder.

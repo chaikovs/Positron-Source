@@ -5,7 +5,7 @@
 
 EventAction::EventAction(RunAction* run):
 G4UserEventAction(),
-fRunAct(run), fPrintModulo(0)
+fRunAct(run)
 {
     fPrintModulo = 100;
 }

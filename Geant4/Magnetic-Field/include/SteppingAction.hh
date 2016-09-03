@@ -16,12 +16,10 @@ public:
 private:
     DetectorConstruction* fDetector;
     EventAction* fEventAction;
-    G4double x_pre;
-    G4double y_pre;
-    G4double z_pre;
-    G4double x_post;
-    G4double y_post;
-    G4double z_post;
+    G4int trackID;
+    G4double x;
+    G4double y;
+    G4double z;
     G4double energy;
     G4double momentumX;
     G4double momentumY;
@@ -29,5 +27,24 @@ private:
     G4double momentumDirectionPhi;
     G4double momentumDirectionTheta;
     G4String nameOfParticle;
+    G4double Energy;
+    G4double MomentumX;
+    G4double MomentumY;
+    G4double MomentumZ;
+    G4double MomentumDirectionPhi;
+    G4double MomentumDirectionTheta;
+    G4double X;
+    G4double Y;
+    G4double Z;
+    G4int ID;
+    G4bool firstStepInVolume;
+    G4double x_pre;
+    G4double y_pre;
+    G4double z_pre;
+    static const G4int sx = 70;
+    static const G4int sy = 70;
+    static const G4int sz = 14;
+    G4double depEn[sx][sy][sz];
+    G4double number[sx][sy][sz];
 };
 #endif

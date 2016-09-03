@@ -1,12 +1,12 @@
-#ifndef SENSITIVEDETECTOR
-#define SENSITIVEDETECTOR
+#ifndef SENSITIVEDETECTORAFTER
+#define SENSITIVEDETECTORAFTER
 
 #include <G4VSensitiveDetector.hh>
 
 class G4Step;
 class G4TouchableHistory;
 
-class SensitiveDetector: public G4VSensitiveDetector
+class SensitiveDetectorAfter: public G4VSensitiveDetector
 {
 private:
     G4String nameOfParticle;
@@ -22,8 +22,8 @@ private:
     G4double T_local;
     G4double T_proper;
 public:
-    SensitiveDetector(G4String name);
-    ~SensitiveDetector();
+    SensitiveDetectorAfter(G4String name);
+    ~SensitiveDetectorAfter();
     G4bool ProcessHits(G4Step *step, G4TouchableHistory*);
 };
 

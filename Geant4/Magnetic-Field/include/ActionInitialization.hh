@@ -3,6 +3,7 @@
 
 #include "G4VUserActionInitialization.hh"
 
+/// Action initialization class.
 class DetectorConstruction;
 
 class ActionInitialization : public G4VUserActionInitialization
